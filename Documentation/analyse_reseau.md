@@ -167,6 +167,7 @@ sudo tshark -i wlp2s0 -f "udp port 5353" -c 20 -w mdns.pcapng
 
 Script automatisé corrigé : capture_multi_proto.sh
 
+------------------------------------------------------------------------------
 #!/bin/bash
 
 INTERFACE="wlp2s0"
@@ -189,8 +190,9 @@ tshark -i "$INTERFACE" -f "tcp port 21" -c 30 -w "$OUTDIR/ftp.pcapng"
 
 tshark -i "$INTERFACE" -f "tcp port 445" -c 30 -w "$OUTDIR/smb.pcapng"
 
-
 echo "[+] Captures terminées. Fichiers disponibles dans : $OUTDIR/"
+
+------------------------------------------------------------------------------
 
 Ce script permet de capturer automatiquement les principaux protocoles réseaux locaux de manière fiable.
 
