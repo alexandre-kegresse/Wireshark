@@ -17,25 +17,25 @@ l’usage de filtres et scripts automatisés.
 wireshark/
 
 ├── README.md                  ← Ce fichier
-
+|
 ├── capture_multi_proto.sh     ← Script Bash pour captures automatisées
-
+|
 ├── documentation/
-
+|
 │   ├── analyse_reseau.md      ← Documentation complète du projet
-
+|
 │   └── schéma_handshake.png   ← Diagramme 3-Way Handshake TCP
-
+|
 ├── captures/                  ← Fichiers .pcapng par protocole
-
+|
 │   ├── dns.pcapng
-
+|
 │   ├── dhcp.pcapng
-
+|
 │   ├── tls.pcapng
-
+|
 │   └── ...
-
+|
 └── .gitignore
 
 🧪 Protocoles étudiés
