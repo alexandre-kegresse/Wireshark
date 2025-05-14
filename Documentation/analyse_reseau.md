@@ -30,7 +30,7 @@ Couche 3 - Réseau
 
 Couche 4 - Transport
 
-Ports TCP/UDP, numéros de séquence
+- Ports TCP/UDP, numéros de séquence
 
 Chaque trame encapsule un paquet, qui encapsule un segment.
 
