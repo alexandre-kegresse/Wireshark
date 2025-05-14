@@ -173,22 +173,16 @@ OUTDIR="captures_tshark"
 mkdir -p "$OUTDIR"
 echo "[+] Début des captures..."
 
-# DNS
 tshark -i "$INTERFACE" -f "udp port 53" -c 50 -w "$OUTDIR/dns.pcapng"
 
-# DHCP
 tshark -i "$INTERFACE" -f "port 67 or port 68" -c 30 -w "$OUTDIR/dhcp.pcapng"
 
-# TLS
 tshark -i "$INTERFACE" -f "tcp port 443" -c 30 -w "$OUTDIR/tls.pcapng"
 
-# mDNS
 tshark -i "$INTERFACE" -f "udp port 5353" -c 30 -w "$OUTDIR/mdns.pcapng"
 
-# FTP
 tshark -i "$INTERFACE" -f "tcp port 21" -c 30 -w "$OUTDIR/ftp.pcapng"
 
-# SMB
 tshark -i "$INTERFACE" -f "tcp port 445" -c 30 -w "$OUTDIR/smb.pcapng"
 
 
