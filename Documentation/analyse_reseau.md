@@ -168,9 +168,13 @@ sudo tshark -i wlp2s0 -f "udp port 5353" -c 20 -w mdns.pcapng
 Script automatisé corrigé : capture_multi_proto.sh
 
 #!/bin/bash
+
 INTERFACE="wlp2s0"
+
 OUTDIR="captures_tshark"
+
 mkdir -p "$OUTDIR"
+
 echo "[+] Début des captures..."
 
 tshark -i "$INTERFACE" -f "udp port 53" -c 50 -w "$OUTDIR/dns.pcapng"
