@@ -12,21 +12,21 @@ Terme
 
 Couche OSI
 
-Contenu principal
+- Contenu principal
 
-Trame
+- Trame
 
 Couche 2 - Liaison
 
-Adresses MAC, Ethernet
+- Adresses MAC, Ethernet
 
-Paquet
+- Paquet
 
 Couche 3 - Réseau
 
-Adresses IP
+- Adresses IP
 
-Segment
+- Segment
 
 Couche 4 - Transport
 
@@ -165,7 +165,7 @@ sudo tshark -i wlp2s0 -f "port 67 or port 68" -c 20 -w dhcp.pcapng
 sudo tshark -i wlp2s0 -f "tcp port 443" -c 20 -w tls.pcapng
 sudo tshark -i wlp2s0 -f "udp port 5353" -c 20 -w mdns.pcapng
 
-Script automatisé corrigé : capture_multi_proto.sh
+Script automatisé : capture_multi_proto.sh
 
 ------------------------------------------------------------------------------
 #!/bin/bash
